@@ -1,0 +1,29 @@
+.col-sm-2,
+.col-md {
+    background-color: #AAAAAA;
+    border: 1px solid black;
+}
+
+.col-md-9 {
+    background-color: #CCCCCC;
+}
+
+h1 {
+    text-align: center;
+}
+
+#nikkiPage {
+    background-color: aqua;
+}
+
+.navBar {
+    background-color: orange;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.textArea {
+    background-color: beige;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}

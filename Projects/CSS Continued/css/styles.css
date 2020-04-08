@@ -1,0 +1,50 @@
+body {
+    background-color: greenyellow;
+}
+
+.animal_main {
+    height: 150px;
+}
+
+div.wrapper {
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid black;
+}
+
+div.container {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 50%;
+    border: 1px solid black;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.container img {
+    float: left;
+    padding-right: 1rem;
+}
+
+.animal_card {
+    position: relative;
+    width: 200px;
+    transition: .2s;
+}
+
+.animal_card:hover {
+    z-index: 9999;
+    transform: scale(1.25);
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+}
+
+ul ul {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}

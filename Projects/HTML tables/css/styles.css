@@ -1,0 +1,33 @@
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0px;
+}
+
+.nightmare td {
+    height: 80px;
+    width: 80px;
+}
+
+.nightmare td:nth-child(odd){
+    background-color: #FFA500;
+}
+
+.nightmare td:nth-child(even){
+    background-color: #DC143C;
+}
+
+.nightmareInside {
+    border: 2px solid black;
+}
+
+.nightmareInside td:nth-child(even){
+    background-color: #00FFFF;
+}
+
+.nightmareInside td {
+    height: 40px;
+}

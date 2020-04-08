@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise, HTML forms</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Exercise, HTML forms</h1>
+    <form action="http://www.no-where.com/formhandler.php" method="get">
+        <fieldset id="text">
+            <legend>Text Form</legend>
+            <label>Text Field
+                <input type="text" name="firstField" id="firstField" onfocus="this.value = ''" value="Type here">
+            </label>
+        </fieldset>
+        <fieldset id="textarea">
+            <legend>Text Area Form</legend>
+            <label>Text Area Field
+                <textarea onfocus="this.value = ''">Enter your text here
+                </textarea>
+            </label>
+        </fieldset>
+        <fieldset id="dropdown">
+            <legend>Drop Down Form</legend>
+            <select name="Fruits">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Kiwi" selected> Kiwi</option>
+                <option value="Orange">Orange</option>
+            </select>
+        </fieldset>
+        <fieldset id="radio">
+            <legend>Radio Form</legend>
+            <label class="containerRadio">Heavy Metal
+                <input type="radio" name="music" value="Heavy Metal" checked="checked">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Rock
+                <input type="radio" name="music" value="Rock">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Punk
+                <input type="radio" name="music" value="Punk">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Indie
+                <input type="radio" name="music" value="Indie">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Pop
+                <input type="radio" name="music" value="Pop">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Electronic
+                <input type="radio" name="music" value="Electronic">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Country
+                <input type="radio" name="music" value="Country">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Classical
+                <input type="radio" name="music" value="Classical">
+                <span class="checkmarkRadio"></span>
+            </label>
+            <label class="containerRadio">Jazz
+                <input type="radio" name="music" value="Jazz">
+                <span class="checkmarkRadio"></span>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="mySubmit">
+        <input type="reset" value="Reset" id="myReset">
+    </form>
+</body>
+
+</html>
