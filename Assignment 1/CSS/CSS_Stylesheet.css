@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: #252525;
+    padding: 8px;
+    text-align: center;
+    color: #ffbb33;
+}
+
+.header img {
+    float: left;
+    height: 80px;
+}
+
+.navBar {
+    text-align: center;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #252525;
+    width: 100%;
+    height: 8%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: #f39c12;
+    text-align: center;
+    margin: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #000;
+}
+
+.active {
+    background-color: #999999;
+    color: white;
+}
+
+.active:visited {
+    background-color: #999999;
+    color: white;
+}
+
+.imageTable {
+    width: 80%;
+}
+
+.imageTable,
+.imageTable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Remove border */
+
+.imageTable td {
+    width: 50%;
+}
+
+.rowMain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 45%;
+}
+
+.rowSide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 100%;
+}
+
+.article {
+    flex: 50%;
+    border: 1px solid black;
+}
+
+.main {
+    flex: 55%;
+    border-right: 1px solid black;
+}
+
+.imgBox {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px dotted black;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+.imageFlex {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.image {
+    flex: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.footer {
+    background-color: #252525;
+    text-align: center;
+    padding: 4px 10px;
+    overflow: auto;
+    color: #999999;
+}
+
+a:link {
+    color: #999999;
+}
+
+a:visited {
+    color: #ff0800;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.02rem;
+}
+
+.socialMedia {
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.contactInfo {
+    float: right;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+h1,
+.main h2 {
+    text-align: center;
+}

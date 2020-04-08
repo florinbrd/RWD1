@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise, HTML forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/CSS_Stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- For comments on the layout of our pages, please look in index.html -->
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/logo.png" width="80px" class="d-inline-block align-top" alt="logo">
+                    A Team - Software Services
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="devTeam.html">Development Team</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                Request us
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="techDescription.html">Technologies</a>
+                                <div class="drowdown-divider"></div>
+                                <a class="dropdown-item active" href="RequestPage.html">Inquiries</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row no-gutters contentArea">
+        <div class="col-md-12">
+            <h2>Choose down below, what programming language you need the job to be written in:</h2>
+            <!-- Here we create a form, in which you can request our services and input your name and email-adress for us to contact you -->
+            <!-- The server to handle such requests is obviously not set up, and as such the request will do nothing, for now -->
+            <form>
+                <div class="form-group row">
+                    <div class="col-md-8">
+                        <label for="projectDescription">Project information</label>
+                        <textarea class="form-control" id="projectDescription" rows="3" placeholder="Please Describe your project"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-2 offset-md-2">Check required languages</div>
+                    <div class="col-md-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Python
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check2">
+                            <label class="form-check-label" for="check2">
+                                C#
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check3">
+                            <label class="form-check-label" for="check3">
+                                CSS
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check4">
+                            <label class="form-check-label" for="check4">
+                                HTML
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check5">
+                            <label class="form-check-label" for="check5">
+                                Java
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Submit request</button>
+                    </div>
+                </div>
+            </form>
+            <p>
+                There is no job too big, too small or too complicated... <br>
+                Give us a ping, and we will get the job done!
+            </p>
+        </div>
+    </div>
+
+    <div class="row no-gutters footer">
+        <div class="col-md-4">
+            <p class="socialMedia">
+                <a href="https://www.facebook.com/A-Team-Software-Services-680694545648131/" target="_blank">Facebook</a>
+            </p>
+            <p class="socialMedia">
+                <a href="https://twitter.com/ATeamSoftwareS1" target="_blank">Twitter</a>
+            </p>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <p class="contactInfo">E-mail:
+                <a href="mailto:someone@ateam.com">someone@ateam.com</a>
+            </p>
+            <p class="contactInfo">Tlf:
+                <a href="tel:+1234567890">+12 34567890</a>
+            </p>
+        </div>
+    </div>
+</body>

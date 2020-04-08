@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The DevTeam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/CSS_Stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/logo.png" width="80px" class="d-inline-block align-top" alt="logo">
+                    A Team - Software Services
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="devTeam.html">Development Team</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                Request us
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="techDescription.html">Technologies</a>
+                                <div class="drowdown-divider"></div>
+                                <a class="dropdown-item" href="RequestPage.html">Inquiries</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row no-gutters contentArea">
+        <div class="col-md-12">
+            <h1>Meet Our Development Team:</h1>
+            <!-- Here we have 2 paragraphs with the same text, this is because the <h2> text is too big for mobile, so on mobile platforms, we use the <p> tag -->
+            <h2 class="d-none d-md-block">Our development team is hardworking, talented and creative. All of our developers are graduated from Danmark and they have Master's in computer sciences.</h2>
+            <p class="d-md-none">Our development team is hardworking, talented and creative. All of our developers are graduated from Danmark and they have Master's in computer sciences.</p>
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Here we create the carousel itself, inserting the images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Here we create two <img> tags, one for medium and above that is larger, and one for mobile that is smaller, so the images are all the same size -->
+                        <!-- This makes the carousel always the same height, stopping the website from "boobing" in height, as the images change -->
+                        <img class="d-none d-md-block img-fluid mx-auto" src="Images/TechTeam/Florin%20pic.jpg" alt="Image of Florin" style="height: 600px">
+                        <img class="d-block d-md-none img-fluid mx-auto" src="Images/TechTeam/Florin%20pic.jpg" alt="Image of Florin" style="height: 300px">
+                        <div class="carousel-caption">
+                            <h5>Florin Bordei</h5>
+                            <p>Net Developer</p>
+                            <a href="mailto:280593@via.dk">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-md-block img-fluid mx-auto" src="Images/TechTeam/Kenneth%20pic.jpg" alt="Image of Kenneth" style="height: 600px">
+                        <img class="d-block d-md-none img-fluid mx-auto" src="Images/TechTeam/Kenneth%20pic.jpg" alt="Image of Kenneth" style="height: 300px">
+                        <div class="carousel-caption">
+                            <h5>Kenneth Jensen</h5>
+                            <p>Design Team Lead</p>
+                            <a href="mailto:280269@via.dk">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-md-block img-fluid mx-auto" src="Images/TechTeam/Jimmi%20pic.jpeg" alt="Image of Jimmi" style="height: 600px">
+                        <img class="d-block d-md-none img-fluid mx-auto" src="Images/TechTeam/Jimmi%20pic.jpeg" alt="Image of Jimmi" style="height: 300px">
+                        <div class="carousel-caption">
+                            <h5>Jimmi C. B.</h5>
+                            <p>Support Engineer</p>
+                            <a href="mailto:280091@via.dk">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-md-block img-fluid mx-auto" src="Images/TechTeam/Teakosheen%20pic.jpg" alt="Image of Teakosheen" style="height: 600px">
+                        <img class="d-block d-md-none img-fluid mx-auto" src="Images/TechTeam/Teakosheen%20pic.jpg" alt="Image of Teakosheen" style="height: 300px">
+                        <div class="carousel-caption">
+                            <h5>Teakosheen Joulak</h5>
+                            <p>Software Engineer</p>
+                            <a href="mailto:280021@via.dk">Contact me</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicators of the Carousel -->
+                <ul class="carousel-indicators">
+                    <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#imageCarousel" data-slide-to="1"></li>
+                    <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    <li data-target="#imageCarousel" data-slide-to="3"></li>
+                </ul>
+                
+                <!-- Forward and backward controls for mobile only, as it is removed for medium breakpoints and above -->
+                <div class="d-md-none">
+                    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <h3>Join Us Now</h3>
+            <p>We are always open to new talent.<br></p>
+            <p>Contact us at: <a href="mailto:someone@ateam.com">someone@ateam.com</a></p>
+        </div>
+    </div>
+
+    <div class="row no-gutters footer">
+        <div class="col-md-4">
+            <p class="socialMedia">
+                <a href="https://www.facebook.com/A-Team-Software-Services-680694545648131/" target="_blank">Facebook</a>
+            </p>
+            <p class="socialMedia">
+                <a href="https://twitter.com/ATeamSoftwareS1" target="_blank">Twitter</a>
+            </p>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <p class="contactInfo">E-mail:
+                <a href="mailto:someone@ateam.com">someone@ateam.com</a>
+            </p>
+            <p class="contactInfo">Tlf:
+                <a href="tel:+1234567890">+12 34567890</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
